@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script type="text/javascript" src="javascripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#send").click(function(){
+                $.post("/participate/sfasdfasdf/sfasdfasdfasdfasdfasdf/357e9df145e779038bb048821d7535f3402403abc7d0ae3dc2dcae724803beb2f55d5add9c611dca825581c16615b334db5a1dd250bdbc121123969bd9c62ac9ef41b76ef947b67e5bb275e3e8d2645ce6dd04465c0ee6054608d545d40bf75818fe9630d033930f70eb4155a6b00f52eb06c9bec6c9c18ecae6a8f7f7b232ffee4dfd49193e6bd781915a3c9bfdcca6ceb9123334b119bf0c4e9a226c060a6346422fd5f018a079fbd7bf5437a1ee39df51cd987eefcc1c04f32745abe74421b2599509072e936b"
+                ,{
+                    uid: '123',
+                    gid: '68'
+                }, function(data){
+                    alert(data.uid);
+                    alert(data.gid);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<input type="button" id="send" value="submit" />
+</body>
+</html>
